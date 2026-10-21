@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кав'ярня «Паркова» — Галерея</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-50 font-sans text-stone-800">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 h-20 flex items-center">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-stone-900 tracking-wide">Кав'ярня «Паркова»</a>
+            <nav class="hidden md:flex space-x-2">
+                <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Головна</a>
+                <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Про нас</a>
+                <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Меню</a>
+                <a href="gallery.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Галерея</a>
+                <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Бронювання</a>
+                <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bg-stone-100 py-4 border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-6 text-sm text-stone-600">
+            <a href="index.html" class="hover:text-amber-600">Головна</a> &gt; <span class="text-stone-900 font-medium">Галерея</span>
+        </div>
+    </div>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold mb-4">Фотогалерея</h1>
+            <p class="text-stone-600">Атмосфера нашої кав'ярні у деталях</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80" alt="Інтер'єр кав'ярні" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Еспресо" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&q=80" alt="Капучино" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=600&q=80" alt="Лате" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Кавові зерна" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=600&q=80" alt="Процес приготування" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Кав'ярня «Паркова»</h3>
+                <p class="text-sm text-stone-400">Затишна атмосфера та найкраща кава в Бродах.</p>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Контакти</h3>
+                <p class="text-sm text-stone-400 mb-2">вул. Шептицького, 1, Броди, 80600</p>
+                <p class="text-sm text-stone-400">+380326644035</p>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Години роботи</h3>
+                <p class="text-sm text-stone-400">Щодня з 08:00 до 21:00</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
