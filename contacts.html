@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кав'ярня «Паркова» — Контакти</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-50 font-sans text-stone-800">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 h-20 flex items-center">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-stone-900 tracking-wide">Кав'ярня «Паркова»</a>
+            <nav class="hidden md:flex space-x-2">
+                <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Головна</a>
+                <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Про нас</a>
+                <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Меню</a>
+                <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Галерея</a>
+                <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Бронювання</a>
+                <a href="contacts.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bg-stone-100 py-4 border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-6 text-sm text-stone-600">
+            <a href="index.html" class="hover:text-amber-600">Головна</a> &gt; <span class="text-stone-900 font-medium">Контакти</span>
+        </div>
+    </div>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold mb-4">Зв'яжіться з нами</h1>
+            <p class="text-stone-600">Ми завжди раді бачити вас у нашій кав'ярні</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="bg-white rounded-3xl shadow-xl p-8 border border-stone-100 space-y-6">
+                <h3 class="text-2xl font-bold mb-4 text-stone-900">Наші координати</h3>
+                <div>
+                    <h4 class="font-semibold text-stone-500 text-sm uppercase">Адреса</h4>
+                    <p class="text-stone-800 text-lg mt-1">вул. Шептицького, 1, Броди, Львівська область, 80600</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-stone-500 text-sm uppercase">Телефон</h4>
+                    <p class="text-stone-800 text-lg mt-1">+380326644035</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-stone-500 text-sm uppercase">Електронна пошта</h4>
+                    <p class="text-stone-800 text-lg mt-1">info@parkovacoffee.ua</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-stone-500 text-sm uppercase">Години роботи</h4>
+                    <p class="text-stone-800 text-lg mt-1">Щодня з 08:00 до 21:00</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-stone-100 h-[400px]">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.509890606771!2d25.14087!3d50.09284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsMDUnMzQuMiJOIDI1wrA4JzI3LjIiRQ!5e0!3m2!1suk!2sua!4v1620000000000!5m2!1suk!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Кав'ярня «Паркова»</h3>
+                <p class="text-sm text-stone-400">Затишна атмосфера та найкраща кава в Бродах.</p>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Контакти</h3>
+                <p class="text-sm text-stone-400 mb-2">вул. Шептицького, 1, Броди, 80600</p>
+                <p class="text-sm text-stone-400">+380326644035</p>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Години роботи</h3>
+                <p class="text-sm text-stone-400">Щодня з 08:00 до 21:00</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
